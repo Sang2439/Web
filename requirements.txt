@@ -1,4 +1,5 @@
 dash==2.6.0
 pandas
 gunicorn
-setuptools>=XX.XX
+flask==2.1.2
+setuptools>=59.5.0
