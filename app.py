@@ -48,7 +48,15 @@ def display_page(pathname):
         )
     else:
         return Introduction.create_layout(app)
-if __name__ == "__main__":
-    
-    app.run(debug=True)
 
+# Xuất ra file HTML
+if __name__ == "__main__":
+    # Lấy mã HTML của trang đầu tiên
+    html_output = app.index()
+
+    # Lưu vào file HTML
+    with open("dashboard_output.html", "w") as f:
+        f.write(html_output)
+
+    # Chạy ứng dụng
+    app.run(debug=True)
