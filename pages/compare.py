@@ -4,7 +4,7 @@ from utils import Header, make_dash_table
 import pandas as pd
 import numpy as npa
 import pathlib
-from scipy.stats import gaussian_kde
+
 # get relative data folder
 PATH = pathlib.Path(__file__).parent
 DATA_PATH = PATH.joinpath("../data").resolve()
