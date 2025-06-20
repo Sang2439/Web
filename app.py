@@ -5,6 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 import time
+import os
 
 from pages import (
     compare,
@@ -50,22 +51,7 @@ def display_page(pathname):
         return Introduction.create_layout(app)
 
 if __name__ == "__main__":
+    port = int(os.environ.get('PORT', 8050))
     # Mở server Dash
     app.run(debug=True)
-  # set use_reloader=False để tránh lỗi khi dùng Selenium
 
-    # Sử dụng Selenium để lấy mã HTML sau khi server đã chạy
-    time.sleep(2)  # Đợi server khởi động
-
-    # Tạo kết nối đến Chrome WebDriver
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-    driver.get("http://127.0.0.1:8050/")  # Địa chỉ của ứng dụng Dash đang chạy
-
-    # Lấy mã HTML của trang
-    html_output = driver.page_source
-
-    # Lưu mã HTML vào file
-    with open("dashboard_output.html", "w") as f:
-        f.write(html_output)
-
-    driver.quit()  # Đóng trình duyệt sau khi lấy HTML
