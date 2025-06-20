@@ -1,6 +1,7 @@
 import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
+
 from pages import (
     compare,
     Dataclean,
@@ -48,5 +49,6 @@ def display_page(pathname):
     else:
         return Introduction.create_layout(app)
 if __name__ == "__main__":
+    
     app.run(debug=True)
 
