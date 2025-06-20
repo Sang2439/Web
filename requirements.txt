@@ -4,3 +4,5 @@ gunicorn
 flask==2.1.2
 setuptools>=59.5.0
 werkzeug==2.0.3
+selenium==4.10.0
+
