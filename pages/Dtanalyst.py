@@ -6,6 +6,7 @@ import pandas as pd
 import pathlib
 from dash.dependencies import Input, Output, State
 from plotly.subplots import make_subplots
+
 # get relative data folder
 PATH = pathlib.Path(__file__).parent
 DATA_PATH = PATH.joinpath("../data").resolve()
