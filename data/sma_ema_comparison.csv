@@ -1,0 +1,6 @@
+﻿Criteria,SMA (Simple Moving Average),EMA (Exponential Moving Average)
+CharacteristicReaction to Price,"Reacts more slowly to price changes and tends to stay farther from the actual price lineSlower reaction, since it evenly averages past prices","Reacts faster and follows the price more closely.Faster reaction, emphasizes recent prices"
+Common Applications,Used for identifying long-term and medium-term trends,Often used for short-term trends or when quick signals are needed
+Best Suited For,Stable markets with low volatility,Volatile markets or when fast reaction is required
+Advantages,"Easy to understand, stable, fewer false signals","Captures recent changes faster, more responsive"
+Disadvantages,"Slow to react, signals lag behind",More prone to noise and false signals in choppy markets
